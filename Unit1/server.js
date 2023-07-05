@@ -15,7 +15,7 @@ app.post('/',(req,res)=>{
     var weight=Number(req.body.weight);
     var height=Number(req.body.height)/100;
     const result = weight/(height*height);
-    res.send("Your BMI  is " + result.toFixed(2) );
+    res.send("Your BMI  is :" + result.toFixed(2) );
 })
 app.listen(port,()=>{
     console.log(`Example app listening the port ${port}`)
